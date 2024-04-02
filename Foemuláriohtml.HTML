@@ -1,0 +1,76 @@
+<html lang= "pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário HTML </title>
+    <link rel="stylesheet" href="../Visual/visual.css">
+</head>
+<body>
+    <header>
+        <hr>
+        <h2> Utilização do Formulário  </h2>
+        <h4> Por: Izadora Faust Benedetti   DS24 1 M1</h4>
+        <hr>
+    </header>
+    <div>
+    <p>Essa tag indica que estamos iniciando um formulário, recebe como principais atributos method que recebe como valor o método http que esse formulário irá executar (get, post) e action que especifica para onde enviar os dados do formulário quando um formulário é enviado.</p>
+    <p>O action faz o caminho para onde os dados do formulário serão enviados quando o formulário for submetido. </p>
+    <p>No method, existem duas funções principais, podendo ser "post" ou "get", o get:Os dados do formulário são anexados à URL <br>especificada no atributo action, resultando em uma URL.  O post: são enviados no corpo da solicitação HTTP, tornando-os mais br seguros e adequados para enviar grandes quantidades de dados ou dados sensíveis, como senhas.</p>
+    <form action="/pagRedirecionamentoInfos.html" method="post">
+         </div>
+        <div >
+            <p> O input input faz parte do conjunto de tags utilizadas para realizar a interação com a pessoa usuária. Ele é um dos principais recursos para a construção de formulários e pode receber diferentes tipos de dados, como textos, arquivos, URLs, datas e muito mais, conforme a definição do atributo type.</p>
+            <p> Label é como se fosse uma div que estivesse rotulando com o nome da função, aquela parte que vai ser inserida alguma informação.</p>
+            <label for="nome">Nome:</label>
+            <span aria-label="required">*</span>
+            <br>
+            <input type="text"  id="nome">
+        </div>
+    
+    
+        <div>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <span aria-label="required">*</span>
+            <br>
+            <input type="date" id="dataNascimento">
+    
+        </div>
+    
+        <div>
+            <label for="email">Email:</label>
+            <span aria-label="required">*</span>
+            <br>
+            <input type="email" id="email">
+            
+        </div>
+    
+        <div>
+            <label for="senhaEmail">Senha:</label>
+            <span aria-label="required">*</span>
+            <br>
+            <input type="password"  id="senhaEmail">
+        </div>
+        <div>
+            <label for="senhaEmail"> Confirmação Senha:</label>
+            <span aria-label="required">*</span>
+            <br>
+            <input type="password"  id="senhaEmail">
+        </div>
+    
+        <div>
+            <label for="arquivo">Um arquivo a sua escolha:</label>
+            <br>
+            <input type="file" name="file_user" id="arquivo">
+            <footer>
+                <hr>
+                <ul>
+                    <p>Escola Sesi Senai moinho Joinville - SC</p>
+                    <p> Professor: Icáro Botelho</p>
+                    <p> 02/04/2024</p>
+                </ul>
+                <hr>
+            </footer>
+    
+    
+</body>
+</html>
